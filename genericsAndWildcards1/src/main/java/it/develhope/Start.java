@@ -15,8 +15,8 @@ public class Start {
         individualMarksListLisa.add(random.nextDouble()*10);
 
         List<Integer> projectsMarksListJeremy = new ArrayList<>();
-        projectsMarksListJeremy.add(random.nextInt(11));
-        projectsMarksListJeremy.add(random.nextInt(11));
+        projectsMarksListJeremy.add(random.nextInt());
+        projectsMarksListJeremy.add(random.nextInt());
 
         double lisaAv = Student.getAverageMark(individualMarksListLisa);
         double jeremyAv = Student.getAverageMark(projectsMarksListJeremy);
