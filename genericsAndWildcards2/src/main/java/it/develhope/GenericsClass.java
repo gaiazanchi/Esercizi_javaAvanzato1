@@ -13,12 +13,7 @@ public class GenericsClass <T>{
     }
 
     public static <T> boolean isEqual(GenericsClass gc1, GenericsClass gc2){
-        if(gc1.getT().equals(gc2.getT())){
-            return true;
-        }else{
-            return false;
-        }
-
+        return gc1.getT().equals(gc2.getT());
     }
 
 }
