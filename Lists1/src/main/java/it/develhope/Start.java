@@ -14,12 +14,12 @@ public class Start {
                 "New York",
         };
 
-        Arrays.asList(cityNames);
+        List<String> cityNamesList = Arrays.asList(cityNames);
 
-        //eccezione perchè l'array ha una dimensione limitata (index out of bounds)
-        //cityNames[3] = "Milan";
+        //se decommento ho errore perchè la lista è immutabile nella sua dimensione
+        //cityNamesList.add("Milan");
 
-        cityNames[1] = "Tegucigalpa";
+        cityNamesList.set(1, "Tegucigalpa");
 
         System.out.println("The cities are: " + Arrays.toString(cityNames));
 
